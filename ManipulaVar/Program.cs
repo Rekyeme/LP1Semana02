@@ -6,13 +6,18 @@ namespace ManipulaVar
     {
         static void Main(string[] args)
         {
-            int x = 21;
-            int y = 12;
-
-            Console.WriteLine(x);
-            Console.WriteLine(x++ + y++);
-            Console.WriteLine(--x - --y);
+            string val;
+            int x;
+            int m2;
             
+            val = args [0];
+            x = int.Parse(val);
+            m2 = x;
+            x++;
+            --m2;
+            
+            Console.WriteLine( x);
+            Console.WriteLine(m2);
         }
     }
 }
